@@ -1,0 +1,112 @@
+@font-face{
+    src:url('AdiHaus\ Regular.otf');
+    font-family: AdiHaus;
+}
+body{
+    background:url(waves.png);
+    background-size:cover;
+    min-width:99vw;
+    min-height:97vh;
+    display:flex;
+    font-family:Adihaus;
+}
+.all-container{
+    max-width:450px;
+    margin: 0 auto;
+}
+.logo{
+    justify-content:center;
+}
+.shoes{
+    background-image:url('shoes.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center center;
+    height:250px;
+    width:100%;
+}
+h2{
+    font-size:48px;
+    text-align:center;
+    letter-spacing:5px;
+    margin: 20px 0px;
+}
+h2:nth-of-type(1){
+    color:#2F80ED;
+    font-weight:400;
+    line-height:42px;
+}
+h2:nth-of-type(2){
+    color:#423A3A;
+    font-weight:700;
+    line-height:50px;
+}
+p{
+    color:#333333;
+    font-weight:400;
+    font-size:14px;
+    text-align:center;
+    line-height: 28px;
+}
+.email-input form{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+input[type="text"]{
+    text-indent:24px;
+    font-weight:400;
+    font-size:14px;
+    line-height:28px;
+    border: 1px solid #333333;
+    width:247px;
+    height:48px;
+    box-sizing:border-box
+}
+input[type="submit"]{
+    border: 1px solid #333333;
+    background-image:linear-gradient(#7C7C7C,#2B2828);
+    color:#FFFFFF;
+    font-size: 18px;
+    width:64px;
+    height:48px;
+    box-sizing:border-box
+}
+
+.desktop-container{
+    display:none;
+}
+
+@media only screen and (min-width: 768px) {
+    .all-container{
+        width:50%;
+    }
+    .shoes{
+        display:none;
+    }
+    .desktop-container{
+        display:block;
+        width:50%;
+        background:url('shoes.png');
+        background-size:cover;
+    }
+    h2{
+        text-align:left;
+        font-size:64px;
+    }
+    h2:nth-of-type(2){
+        line-height:71px;
+    }
+    p{
+        text-align:left;
+    }
+    .email-input form{
+        justify-content:left;
+    }
+    .logo{
+        display:flex;
+        justify-content:left;
+        margin: 30px 30px 100px;
+    }
+}
+
